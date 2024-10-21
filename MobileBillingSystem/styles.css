@@ -1,0 +1,88 @@
+/* Body and layout styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif; /* Applying Cinzel font */
+     /* Path to your dark theme background */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('C:\Users\ckmad\Downloads\MobileBillingSystem\bg.jpg');
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Styling form */
+form {
+    margin: 20px 0;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"], input[type="password"], input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+}

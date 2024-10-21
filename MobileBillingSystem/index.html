@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Billing System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Mobile Billing</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Mobile Billing System</h1>
+
+        <form id="billing-form">
+            <label for="calls">Number of Calls:</label>
+            <input type="number" id="calls" name="calls" required>
+
+            <label for="messages">Number of Messages:</label>
+            <input type="number" id="messages" name="messages" required>
+
+            <label for="data">Data Used (in GB):</label>
+            <input type="number" id="data" name="data" step="0.01" required>
+
+            <button type="button" onclick="calculateBill()">Calculate Bill</button>
+        </form>
+
+        <div class="result">
+            <h2>Your Total Bill: $<span id="total-bill">0.00</span></h2>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mobile Billing System. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript file linked -->
+    <script src="script.js"></script>
+</body>
+</html>
